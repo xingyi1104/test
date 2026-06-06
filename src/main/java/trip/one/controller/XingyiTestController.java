@@ -22,10 +22,12 @@ public class XingyiTestController {
      */
     @GetMapping("/getCorpName")
     public String getCorpName(@RequestParam Long id) {
+        // 根据 id 查询企业信息
         XingyiTestDO record = xingyiTestManager.selectByPrimaryKey(id);
         if (record == null) {
             return "未找到对应企业";
+        } else {
+            return record.getCorpName();
         }
-        return record.getCorpName();
     }
 }
