@@ -26,8 +26,8 @@ public class XingyiTestController {
         XingyiTestDO record = xingyiTestManager.selectByPrimaryKey(id);
         if (record == null) {
             return "未找到对应企业";
-        } 
-        
-        return record.getCorpName();
+        } else {
+            return record.getCorpName();
+        }
     }
 }
