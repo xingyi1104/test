@@ -1,7 +1,6 @@
 package trip.one.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -34,9 +33,9 @@ public class XingyiTestController {
 
     /**
      * 新增企业记录
-     * POST /xingyi/addCorp?corpId=xxx&corpName=xxx
+     * GET /xingyi/addCorp?corpId=xxx&corpName=xxx
      */
-    @PostMapping("/addCorp")
+    @GetMapping("/addCorp")
     public String addCorp(@RequestParam String corpId, @RequestParam String corpName) {
         int rows = xingyiTestManager.insert(corpId, corpName);
         if (rows > 0) {
