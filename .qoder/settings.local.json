@@ -5,7 +5,9 @@
       "Bash(which qoder-cli 2>&1; which qd 2>&1; ls ~/.qoder* 2>&1; ls ~/.config/qoder* 2>&1)",
       "Bash(cat ~/.qoder-cn/state.json 2>&1)",
       "Read(//Users/wanglei/.qoder-cn/**)",
-      "Bash(cat ~/.qoder-cn/settings.json 2>&1 | head -50)"
+      "Bash(cat ~/.qoder-cn/settings.json 2>&1 | head -50)",
+      "Bash(find /Users/wanglei/idea/test/src -type f | head -50)",
+      "WebFetch(*)"
     ]
   }
 }
