@@ -44,4 +44,8 @@ public class XingyiTestController {
             return "添加失败";
         }
     }
+
+    public static void main(String[] args) {
+        System.out.println("helloworld");
+    }
 }
